@@ -1,0 +1,32 @@
+{
+    "parameters": {
+      "x0": 0.5,
+      "y0": 0.5,
+      "sigma": 0.2,
+      "sigma2": 0.04,
+      "alpha": 1.0
+    },
+  
+    "alpha": 1.0,
+  
+    "exact": {
+      "u": "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2))"
+    },
+  
+    "source": "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2)) * (alpha + 2/sigma2 - (((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (sigma2*sigma2)))",
+  
+    "dirichlet": {
+      "left":   "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2))",
+      "right":  "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2))",
+      "bottom": "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2))",
+      "top":    "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2))"
+    },
+  
+    "neumann": {
+      "left":   "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2)) * ((x - x0)/sigma2)",
+      "right":  "-exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2)) * ((x - x0)/sigma2)",
+      "bottom": "exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2)) * ((y - y0)/sigma2)",
+      "top":    "-exp(-((x - x0)*(x - x0) + (y - y0)*(y - y0)) / (2*sigma2)) * ((y - y0)/sigma2)"
+    }
+  }
+  

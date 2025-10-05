@@ -1,0 +1,105 @@
+# (1) Compiler and flags
+CXX      = g++
+CPPFLAGS = -I/usr/include/eigen3 -I/usr/include/mkl -I/usr/include/hdf5/serial -I/usr/local/include/HighFive/include -I./include
+OPT_FLAGS = -Ofast
+MATH_FLAGS = -ffast-math -fno-math-errno -fassociative-math -fno-signed-zeros
+ARCH_FLAGS = -march=alderlake -mtune=alderlake
+MP_FLAGS = -fopenmp
+
+### Generic BLAS and LAPACK
+#EIGEN_FLAGS = -DEIGEN_USE_BLAS -DEIGEN_USE_LAPACKE #LAPACKE is c API
+#CXXFLAGS = -std=c++17 -fopenmp -funroll-loops -mfma -DNDEBUG $(MP_FLAGS) $(OPT_FLAGS) $(MATH_FLAGS) $(ARCH_FLAGS) $(ARCH_FLAGS) $(EIGEN_FLAGS)
+#LDFLAGS = -L/usr/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu/hdf5/serial
+#LDLIBS = -lblas -llapacke -lhdf5 -lhdf5_hl -lpthread -lm
+
+### intel mkl
+MKL_FLAGS = -m64
+EIGEN_FLAGS = -DEIGEN_USE_MKL_ALL
+AVX_FLAGS = -mavx2
+CXXFLAGS = -std=c++17 -funroll-loops -mfma -DNDEBUG $(MKL_FLAGS) $(MP_FLAGS) $(OPT_FLAGS) $(MATH_FLAGS) $(ARCH_FLAGS) $(EIGEN_FLAGS) $(AVX_FLAGS) 
+LDFLAGS = -L/usr/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu/hdf5/serial
+LDLIBS = -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lhdf5 -lhdf5_hl -lpthread -lm  
+### intel mkl remarks
+### do not use -DMKL_ILP64 and -lmkl_intel_ilp64, they are for longlong(64bit) int, causing errors
+### Do not use -lmkl_gnu_thread and -lgomp together, causing incorrect match of runtime and thread pool.
+
+### gadi intel
+#CPPFLAGS = -I/$(HDF5_BASE)/include -I./include/ -I./include/eigen3/ -I./include/HighFive/include/
+#ARCH_FLAGS = -march=skylake -mtune=skylake
+#MKL_FLAGS = -m64
+#EIGEN_FLAGS = -DEIGEN_USE_MKL_ALL
+#CXXFLAGS = -std=c++17 -funroll-loops -mfma -DNDEBUG $(MKL_FLAGS) $(MP_FLAGS) $(OPT_FLAGS) $(MATH_FLAGS) $(ARCH_FLAGS) $(ARCH_FLAGS) $(EIGEN_FLAGS)
+#LDFLAGS = -L/${MKLROOT}/lib/intel64 -L/$(HDF5_BASE)/lib
+#LDLIBS = -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lhdf5 -lhdf5_hl -lpthread -lm
+
+### For mac
+## CXX = /usr/local/bin/g++
+## g++ now sym linked to hombrew: g++=/usr/local/bin/g++=/opt/homebrew/bin/aarch64-apple-darwin24-g++-15
+#CXX = /Library/Developer/CommandLineTools/usr/bin/g++
+## CXX = g++
+#CPPFLAGS = -I/usr/local/include/eigen3 -I/opt/homebrew/opt/hdf5/include -I/usr/local/include/HighFive/include -I./include
+#OPT_FLAGS = -Ofast
+#MATH_FLAGS = -ffast-math -fno-math-errno -fassociative-math -fno-signed-zeros
+#ARCH_FLAGS = -mcpu=apple-m3 -mtune=apple-m3
+#EIGEN_FLAGS = -DEIGEN_USE_BLAS -DEIGEN_USE_LAPACKE
+#### -Ofast = -O3 -ffast-math
+
+
+
+# (2) Sources, objects, and executables
+SRCS     = gllQuadrature.cpp RecElement.cpp RecGrid.cpp testGLL.cpp testEigen.cpp testMeshGrid.cpp testConnectionTable.cpp testSquareGrid.cpp testHighFive.cpp testSolver.cpp testSolver_sp.cpp testSolver_spCG.cpp
+# use substitution referece to convert each filename.cpp to filename.o
+OBJS     = $(SRCS:.cpp=.o)
+TARGETS  = testGLL testEigen testMeshGrid testConnectionTable testSquareGrid testHighFive testSolver testSolver_sp testSolver_spCG
+
+# (3) Declares all and clean as phony targets, meaning they aren’t real files for makefile.
+# Ensures Make will always run their recipes when you invoke them.
+.PHONY: all clean
+
+#!!! always put default  target first so make will build if there's no input param after make
+all: $(TARGETS)
+
+# (4) Link testGLL
+# $@ expands to the target names, $@ = testGLL
+# $^ is all prerequisites testGLL.o gllQuadrature.o
+testGLL: testGLL.o gllQuadrature.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+# Link testEigen
+testEigen: testEigen.o gllQuadrature.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+# Link testMeshGrid
+testMeshGrid: testMeshGrid.o gllQuadrature.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+testConnectionTable: testConnectionTable.o gllQuadrature.o RecGrid.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+testSquareGrid: testSquareGrid.o RecGrid.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+testHighFive: testHighFive.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+testSolver: testSolver.o gllQuadrature.o RecGrid.o RecElement.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+testSolver_sp: testSolver_sp.o gllQuadrature.o RecGrid.o RecElement.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+testSolver_spCG: testSolver_spCG.o gllQuadrature.o RecGrid.o RecElement.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+# (5) Compile .cpp → .o
+# pattern rule %.0 for object file, %.cpp for source file
+# $< is the first prerequisite afeter: (%.cpp)
+%.o: %.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
+
+# (6) Automatically delete object files after building
+.INTERMEDIATE: $(OBJS)
+
+# Manual clean (if you ever want to remove binaries too)
+clean:
+	rm -f $(TARGETS)

@@ -1,0 +1,561 @@
+===== sigma0 = 0 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=0
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0553772 seconds
+Errors:
+  relative ||u-uh||_2        = 0.000505265
+  relative broken L2         = 0.000193575
+  relative broken H1 (semi)  = 0.00631145
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 0.5510204081632653 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=0.55102
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0112628 seconds
+Errors:
+  relative ||u-uh||_2        = 4.21662e-05
+  relative broken L2         = 2.10724e-05
+  relative broken H1 (semi)  = 0.000580503
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 1.102040816326531 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=1.10204
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0448337 seconds
+Errors:
+  relative ||u-uh||_2        = 0.000468181
+  relative broken L2         = 0.000183173
+  relative broken H1 (semi)  = 0.00617058
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 1.653061224489796 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=1.65306
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0150979 seconds
+Errors:
+  relative ||u-uh||_2        = 9.16416e-05
+  relative broken L2         = 5.37001e-05
+  relative broken H1 (semi)  = 0.00136824
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 2.204081632653061 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=2.20408
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00852604 seconds
+Errors:
+  relative ||u-uh||_2        = 0.000209342
+  relative broken L2         = 0.000124462
+  relative broken H1 (semi)  = 0.00302388
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 2.755102040816326 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=2.7551
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0103075 seconds
+Errors:
+  relative ||u-uh||_2        = 0.000652069
+  relative broken L2         = 0.000389254
+  relative broken H1 (semi)  = 0.00943368
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 3.306122448979592 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=3.30612
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00810797 seconds
+Errors:
+  relative ||u-uh||_2        = 0.00389019
+  relative broken L2         = 0.00244463
+  relative broken H1 (semi)  = 0.0592102
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 3.857142857142857 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=3.85714
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0371168 seconds
+Errors:
+  relative ||u-uh||_2        = 0.00237473
+  relative broken L2         = 0.00123452
+  relative broken H1 (semi)  = 0.033809
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 4.408163265306122 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=4.40816
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00772683 seconds
+Errors:
+  relative ||u-uh||_2        = 0.00122232
+  relative broken L2         = 0.000838662
+  relative broken H1 (semi)  = 0.0208244
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 4.959183673469387 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=4.95918
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0314255 seconds
+Errors:
+  relative ||u-uh||_2        = 0.000122794
+  relative broken L2         = 8.49945e-05
+  relative broken H1 (semi)  = 0.00214349
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 5.510204081632653 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+PardisoLDLT factorization failed, falling back to PardisoLU
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=5.5102
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00788202 seconds
+Errors:
+  relative ||u-uh||_2        = 0.00385259
+  relative broken L2         = 0.00280171
+  relative broken H1 (semi)  = 0.071268
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 6.061224489795918 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=6.06122
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.034254 seconds
+Errors:
+  relative ||u-uh||_2        = 0.00010579
+  relative broken L2         = 7.83425e-05
+  relative broken H1 (semi)  = 0.00199834
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 6.612244897959183 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=6.61224
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0143954 seconds
+Errors:
+  relative ||u-uh||_2        = 3.55909e-05
+  relative broken L2         = 2.5432e-05
+  relative broken H1 (semi)  = 0.000635498
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 7.163265306122448 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=7.16327
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00679358 seconds
+Errors:
+  relative ||u-uh||_2        = 2.66092e-05
+  relative broken L2         = 1.88049e-05
+  relative broken H1 (semi)  = 0.000467225
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 7.714285714285714 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=7.71429
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0309943 seconds
+Errors:
+  relative ||u-uh||_2        = 2.17965e-05
+  relative broken L2         = 1.53237e-05
+  relative broken H1 (semi)  = 0.000379634
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 8.26530612244898 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=8.26531
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00649869 seconds
+Errors:
+  relative ||u-uh||_2        = 1.85878e-05
+  relative broken L2         = 1.30263e-05
+  relative broken H1 (semi)  = 0.00032207
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 8.816326530612244 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=8.81633
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0205928 seconds
+Errors:
+  relative ||u-uh||_2        = 1.62497e-05
+  relative broken L2         = 1.13629e-05
+  relative broken H1 (semi)  = 0.00028048
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 9.367346938775508 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=9.36735
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00679376 seconds
+Errors:
+  relative ||u-uh||_2        = 1.44557e-05
+  relative broken L2         = 1.00926e-05
+  relative broken H1 (semi)  = 0.000248756
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 9.918367346938775 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=9.91837
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0376719 seconds
+Errors:
+  relative ||u-uh||_2        = 1.30301e-05
+  relative broken L2         = 9.08698e-06
+  relative broken H1 (semi)  = 0.000223657
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 10.46938775510204 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=10.4694
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0131175 seconds
+Errors:
+  relative ||u-uh||_2        = 1.18675e-05
+  relative broken L2         = 8.26957e-06
+  relative broken H1 (semi)  = 0.000203259
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 11.02040816326531 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=11.0204
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00608907 seconds
+Errors:
+  relative ||u-uh||_2        = 1.08998e-05
+  relative broken L2         = 7.59136e-06
+  relative broken H1 (semi)  = 0.000186332
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 11.57142857142857 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=11.5714
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0337197 seconds
+Errors:
+  relative ||u-uh||_2        = 1.00813e-05
+  relative broken L2         = 7.01929e-06
+  relative broken H1 (semi)  = 0.00017205
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 12.12244897959184 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=12.1224
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0109225 seconds
+Errors:
+  relative ||u-uh||_2        = 9.37946e-06
+  relative broken L2         = 6.53014e-06
+  relative broken H1 (semi)  = 0.000159832
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 12.6734693877551 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=12.6735
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0114253 seconds
+Errors:
+  relative ||u-uh||_2        = 8.7708e-06
+  relative broken L2         = 6.1071e-06
+  relative broken H1 (semi)  = 0.000149258
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 13.22448979591837 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=13.2245
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0166474 seconds
+Errors:
+  relative ||u-uh||_2        = 8.23778e-06
+  relative broken L2         = 5.73765e-06
+  relative broken H1 (semi)  = 0.000140015
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 13.77551020408163 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=13.7755
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0121526 seconds
+Errors:
+  relative ||u-uh||_2        = 7.76706e-06
+  relative broken L2         = 5.41228e-06
+  relative broken H1 (semi)  = 0.000131868
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 14.3265306122449 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=14.3265
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0353781 seconds
+Errors:
+  relative ||u-uh||_2        = 7.34827e-06
+  relative broken L2         = 5.1236e-06
+  relative broken H1 (semi)  = 0.000124631
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 14.87755102040816 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=14.8776
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0140375 seconds
+Errors:
+  relative ||u-uh||_2        = 6.97326e-06
+  relative broken L2         = 4.86582e-06
+  relative broken H1 (semi)  = 0.000118161
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 15.42857142857143 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=15.4286
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00672367 seconds
+Errors:
+  relative ||u-uh||_2        = 6.63548e-06
+  relative broken L2         = 4.6343e-06
+  relative broken H1 (semi)  = 0.000112342
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 15.97959183673469 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=15.9796
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00695205 seconds
+Errors:
+  relative ||u-uh||_2        = 6.32966e-06
+  relative broken L2         = 4.4253e-06
+  relative broken H1 (semi)  = 0.000107082
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 16.53061224489796 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=16.5306
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0170689 seconds
+Errors:
+  relative ||u-uh||_2        = 6.05148e-06
+  relative broken L2         = 4.23575e-06
+  relative broken H1 (semi)  = 0.000102305
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 17.08163265306122 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=17.0816
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0132091 seconds
+Errors:
+  relative ||u-uh||_2        = 5.79736e-06
+  relative broken L2         = 4.06311e-06
+  relative broken H1 (semi)  = 9.79464e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 17.63265306122449 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=17.6327
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00652695 seconds
+Errors:
+  relative ||u-uh||_2        = 5.56432e-06
+  relative broken L2         = 3.90529e-06
+  relative broken H1 (semi)  = 9.39554e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 18.18367346938775 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=18.1837
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00673759 seconds
+Errors:
+  relative ||u-uh||_2        = 5.34985e-06
+  relative broken L2         = 3.76051e-06
+  relative broken H1 (semi)  = 9.02877e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 18.73469387755102 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=18.7347
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0150164 seconds
+Errors:
+  relative ||u-uh||_2        = 5.15184e-06
+  relative broken L2         = 3.62727e-06
+  relative broken H1 (semi)  = 8.69061e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 19.28571428571428 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=19.2857
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0122631 seconds
+Errors:
+  relative ||u-uh||_2        = 4.96847e-06
+  relative broken L2         = 3.50429e-06
+  relative broken H1 (semi)  = 8.37789e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 19.83673469387755 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=19.8367
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.026561 seconds
+Errors:
+  relative ||u-uh||_2        = 4.79819e-06
+  relative broken L2         = 3.39048e-06
+  relative broken H1 (semi)  = 8.08791e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 20.38775510204081 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=20.3878
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00623598 seconds
+Errors:
+  relative ||u-uh||_2        = 4.63966e-06
+  relative broken L2         = 3.28489e-06
+  relative broken H1 (semi)  = 7.81832e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 20.93877551020408 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=20.9388
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0366603 seconds
+Errors:
+  relative ||u-uh||_2        = 4.49173e-06
+  relative broken L2         = 3.18669e-06
+  relative broken H1 (semi)  = 7.56709e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 21.48979591836735 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=21.4898
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00642267 seconds
+Errors:
+  relative ||u-uh||_2        = 4.35337e-06
+  relative broken L2         = 3.09519e-06
+  relative broken H1 (semi)  = 7.33245e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 22.04081632653061 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=22.0408
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0392246 seconds
+Errors:
+  relative ||u-uh||_2        = 4.22369e-06
+  relative broken L2         = 3.00975e-06
+  relative broken H1 (semi)  = 7.11286e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 22.59183673469387 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=22.5918
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0147083 seconds
+Errors:
+  relative ||u-uh||_2        = 4.10192e-06
+  relative broken L2         = 2.92981e-06
+  relative broken H1 (semi)  = 6.90695e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 23.14285714285714 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=23.1429
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0066376 seconds
+Errors:
+  relative ||u-uh||_2        = 3.98737e-06
+  relative broken L2         = 2.8549e-06
+  relative broken H1 (semi)  = 6.71353e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 23.69387755102041 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=23.6939
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.031278 seconds
+Errors:
+  relative ||u-uh||_2        = 3.87942e-06
+  relative broken L2         = 2.78458e-06
+  relative broken H1 (semi)  = 6.53152e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 24.24489795918367 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=24.2449
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00645182 seconds
+Errors:
+  relative ||u-uh||_2        = 3.77754e-06
+  relative broken L2         = 2.71847e-06
+  relative broken H1 (semi)  = 6.35999e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 24.79591836734694 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=24.7959
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0349657 seconds
+Errors:
+  relative ||u-uh||_2        = 3.68122e-06
+  relative broken L2         = 2.65622e-06
+  relative broken H1 (semi)  = 6.19808e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 25.3469387755102 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=25.3469
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.00661601 seconds
+Errors:
+  relative ||u-uh||_2        = 3.59004e-06
+  relative broken L2         = 2.59754e-06
+  relative broken H1 (semi)  = 6.04504e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 25.89795918367347 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=25.898
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0316538 seconds
+Errors:
+  relative ||u-uh||_2        = 3.50361e-06
+  relative broken L2         = 2.54213e-06
+  relative broken H1 (semi)  = 5.90019e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 26.44897959183673 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=26.449
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0150873 seconds
+Errors:
+  relative ||u-uh||_2        = 3.42157e-06
+  relative broken L2         = 2.48977e-06
+  relative broken H1 (semi)  = 5.76291e-05
+Sparse global A approx memory consumption = 0.036869 MB
+===== sigma0 = 27 =====
+SIPG and alpha>0, SPD, using Eigen's MKL Pardiso's LLT
+Rectangle grid [ 0, 1 ] x [ 0, 1 ] with Nel_x=4, Nel_y=4, and total Nel=16 elements:
+DG method=SIPG, order k=3, sigma0=27
+Solver method=Sparse Direct, package=Eigen intel MKL PardisoLLT+LDLT+LU
+DG Solver Wall time: 0.0121113 seconds
+Errors:
+  relative ||u-uh||_2        = 3.34361e-06
+  relative broken L2         = 2.44022e-06
+  relative broken H1 (semi)  = 5.63266e-05
+Sparse global A approx memory consumption = 0.036869 MB

@@ -1,0 +1,25 @@
+{
+    "parameters": { "pi": 3.141592653589793 },
+    "alpha": 0.5,
+  
+    "source": "(pi*pi + 0.5) * sin(pi*x) * (1 + y)",
+  
+    "exact": {
+      "u": "sin(pi*x) * (1 + y)"
+    },
+  
+    "dirichlet": {
+      "left":   "sin(pi*x) * (1 + y)",
+      "right":  "sin(pi*x) * (1 + y)",
+      "bottom": "sin(pi*x) * (1 + y)",
+      "top":    "sin(pi*x) * (1 + y)"
+    },
+  
+    "neumann": {
+      "left":   "-pi*cos(pi*x) * (1 + y)",
+      "right":  " pi*cos(pi*x) * (1 + y)",
+      "bottom": "-sin(pi*x)",
+      "top":     "sin(pi*x)"
+    }
+  }
+  

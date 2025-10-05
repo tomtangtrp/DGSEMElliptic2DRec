@@ -1,0 +1,25 @@
+{
+    "parameters": {},
+    "alpha": 1.0,
+  
+    "source": "(2.0 - 4.0*y*y) * exp(-x - y*y)",
+  
+    "exact": {
+      "u": "exp(-x - y*y)"
+    },
+  
+    "dirichlet": {
+      "left":   "exp(-x - y*y)",
+      "right":  "exp(-x - y*y)",
+      "bottom": "exp(-x - y*y)",
+      "top":    "exp(-x - y*y)"
+    },
+  
+    "neumann": {
+      "left":   "exp(-x - y*y)",   
+      "right":  "-exp(-x - y*y)",  
+      "bottom": "2.0*y*exp(-x - y*y)",   
+      "top":    "-2.0*y*exp(-x - y*y)"   
+    }
+  }
+  
