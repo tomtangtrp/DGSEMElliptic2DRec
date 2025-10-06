@@ -66,5 +66,5 @@ python3 scanSigma.py \
 # Demonstration
 ### solution
 ![solution testcase0 DC](./plots/solution_exponential_DC_SIPG.png) 
-
+<img src="./plots/solution_exponential_DC_SIPG.png" alt="solution testcase0 DC" width="100"/>
 
