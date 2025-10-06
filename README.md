@@ -76,7 +76,7 @@ python3 scanSigma.py \
 <img src="./plots/scanSigma_testcase0_k3_SIPG.png" alt="sigma testcase0 k3" width="400"/>
 
 ### Pardiso OMP scaling vs Matrix Free MPI Jacobi-precondition CG (work in progress)
-<img src="testcase0_SIPG_k2_Nel65536_walltime_vs_cores.png" alt="omp scaling vs mpi" width="400"/>
+<img src="./plots/testcase0_SIPG_k2_Nel65536_walltime_vs_cores.png" alt="omp scaling vs mpi" width="400"/>
 
 
 
