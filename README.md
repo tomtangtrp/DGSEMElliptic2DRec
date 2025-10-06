@@ -1,6 +1,35 @@
 # DGSEMElliptic2DRec
 practice project on DGSEM 2D rectangular grid for Elliptic PDEs
 
+# Dependencies
+### install highfive
+```bash
+cd /usr/local/include
+git clone --recursive https://github.com/BlueBrain/HighFive.git
+cd HighFive
+cmake -DCMAKE_INSTALL_PREFIX=build/install -DHIGHFIVE_USE_BOOST=Off -B build .
+cmake --build build --parallel
+cmake --install build
+```
+
+### ubuntu
+```bash
+sudo apt install libeigen3-dev
+sudo apt install libhdf5-dev
+```
+
+### gadi
+```bash
+module load eigen/3.3.7
+module load hdf5/1.10.7
+module load intel-mkl/2025.2.0
+module load intel-compiler-llvm/2025.2.0
+```
+
+
+
+
+
 # Build
 ```bash
 make testSolver_sp
