@@ -1,5 +1,5 @@
 # DGSEMElliptic2DRec
-practice project on DGSEM 2D rectangular grid for Elliptic PDEs
+practice project on DGSEM 2D rectangular grid for Elliptic PDEs, using Eigen's intel Pardiso sparse direct solver with OPENMP
 
 # Dependencies
 ### install highfive
