@@ -2,7 +2,7 @@
 practice project on DGSEM 2D rectangular grid for Elliptic PDEs, using Eigen's intel Pardiso sparse direct solver with OPENMP
 
 # Machine.mk
-For different hardware platform (example included are ubuntu&gcc, gadi&gcc/intel, macos&apple silicon), just select different `BUILD_ENV` in machine.mk
+For different hardware platform (example included are ubuntu(x86)+gcc, gadi+gcc/intel, macos(arm64 apple silicon)+clang, just select different `BUILD_ENV` in machine.mk
 
 
 # Dependencies
