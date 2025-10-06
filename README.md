@@ -1,6 +1,10 @@
 # DGSEMElliptic2DRec
 practice project on DGSEM 2D rectangular grid for Elliptic PDEs, using Eigen's intel Pardiso sparse direct solver with OPENMP
 
+# Machine.mk
+For different hardware platform (example included are ubuntu&gcc, gadi&gcc/intel, macos&apple silicon), just select different `BUILD_ENV` in machine.mk
+
+
 # Dependencies
 ### install highfive
 ```bash
@@ -25,10 +29,6 @@ module load hdf5/1.10.7
 module load intel-mkl/2025.2.0
 module load intel-compiler-llvm/2025.2.0
 ```
-
-
-
-
 
 # Build
 ```bash
