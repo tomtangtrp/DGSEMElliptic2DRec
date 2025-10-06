@@ -5,6 +5,7 @@
 BUILD_ENV ?= gcc_ubuntu_intel
 # (3)
 #BUILD_ENV ?= gcc_gadiy08_intel
+#BUILD_ENV ?= intel_gadiy08_intel
 # (4) g++ compiler linked to Apple Accelerate
 #BUILD_ENV ?= gcc_macos_accelerate
 
