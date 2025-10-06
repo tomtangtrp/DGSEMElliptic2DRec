@@ -36,6 +36,35 @@ make testSolver_sp
 ```
 
 # Run
+### simple run
 ```bash
 ./testSolver_sp n SIPG 3 10 256 256 0 6.283185307179586 0 6.283185307179586 "L=D,R=D,B=N,T=N" cases/testcase1.json
 ```
+
+### convergence test
+```bash
+./runConvergence.sh SIPG testcase0
+```
+
+### sigma scan
+```bash
+python3 scanSigma.py \
+  --exe ./testSolver_sp \
+  --method SIPG \
+  -k 3 \
+  --nelx 4 --nely 4 \
+  --bc "L=D,R=D,B=D,T=D" \
+  --case ./cases/testcase0.json \
+  --write nw
+```
+
+### omp scaling test
+```bash
+./runOmpScaling.sh
+```
+
+# Demonstration
+### solution
+![solution testcase0 DC](./plots/solution_exponential_DC_SIPG.png) 
+
+
