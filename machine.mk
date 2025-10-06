@@ -57,6 +57,20 @@ LDFLAGS = -L${MKLROOT}/lib/intel64 -L${HDF5_BASE}/lib
 LDLIBS = -lmkl_intel_lp64 -lmkl_core -lmkl_gnu_thread -lhdf5 -lhdf5_hl -lpthread -lm
 endif
 
+ifeq ($(BUILD_ENV),intel_gadiy08_intel)
+CXX = icpx
+CPPFLAGS = -I${EIGEN_BASE}/eigen3 -I${MKLROOT}/include -I$(HDF5_BASE)/include -I../minclude/HighFive/include -I./include
+OPT_FLAGS = -O3
+#ARCH_FLAGS = -march=skylake-avx512 -mtune=skylake
+ARCH_FLAGS = -march=cascadelake -mavx512f -mtune=cascadelake
+MKL_FLAGS = -m64
+MP_FLAGS = -qopenmp
+# LAPACKE is c API for LAPACK
+EIGEN_FLAGS = -DEIGEN_USE_MKL_ALL
+CXXFLAGS = -std=c++17 -funroll-loops -mfma -DNDEBUG $(MKL_FLAGS) $(MP_FLAGS) $(OPT_FLAGS) $(MATH_FLAGS) $(ARCH_FLAGS) $(EIGEN_FLAGS)
+LDFLAGS = -L${MKLROOT}/lib/intel64 -L${HDF5_BASE}/lib
+LDLIBS = -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lhdf5 -lhdf5_hl -lpthread -lm -lstdc++fs
+endif
 
 ifeq ($(BUILD_ENV),gcc_macos_accelerate)
 #CXX = /usr/local/bin/g++
