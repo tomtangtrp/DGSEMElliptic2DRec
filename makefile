@@ -58,7 +58,7 @@ testSolver_spCG: testSolver_spCG.o gllQuadrature.o RecGrid.o RecElement.o
 # (5) Compile .cpp → .o
 # pattern rule %.0 for object file, %.cpp for source file
 # $< is the first prerequisite afeter: (%.cpp)
-$(OBJ_DIR)%/.o: $(SRC)DUR)/%.cpp
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
 
 # (6) Automatically delete object files after building, this will destroy incremental build, only keep during testing where codes are expected to change a lot
